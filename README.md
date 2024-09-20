@@ -1,8 +1,18 @@
+<!--
+ * @Author: 任晨晨 cop.renchenchen@ushareit.com
+ * @Date: 2024-09-20 16:23:53
+ * @LastEditors: 任晨晨 cop.renchenchen@ushareit.com
+ * @LastEditTime: 2024-09-20 16:28:20
+ * @FilePath: /styleGuide/README.md
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+-->
 # fe-spec
 
 印客学院 前端编码规范工程化
 
-## :mountain: 能力支持
+## mountain: 能力支持
 
 ### 1. 全面的前端生态
 

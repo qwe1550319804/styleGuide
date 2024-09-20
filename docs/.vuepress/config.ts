@@ -103,7 +103,7 @@ export default defineConfig4CustomTheme({
         children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
       },
     ],
-    logo: '/img/logo.png',
+    logo: '/img/logo.png',    //本地:.vuepress/public/img 打包后 根目录下
     repo: 'encode-studio-fe/fe-spec',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
