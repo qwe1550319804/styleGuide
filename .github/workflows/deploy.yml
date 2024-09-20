@@ -28,4 +28,4 @@ jobs:
               with:
                   BRANCH: gh-pages
                   FOLDER: docs/.vuepress/dist
-                  token: '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'
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
