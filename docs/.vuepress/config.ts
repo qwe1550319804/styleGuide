@@ -4,8 +4,8 @@ export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '个人博客',
-      description: '专注于数据分析',
+      title: '印客学院',
+      description: '前端编码规范工程化',
     },
   },
   base: '/styleGuide/',
@@ -13,57 +13,97 @@ export default defineConfig4CustomTheme({
     nav: [
       { text: '首页', link: '/index.md' },
       {
-        text: '日常生活',
+        text: '编码规范',
         items: [
-          { text: '学习', link: '/daily/study.md' },
-          { text: '躺平', link: '/daily/lieFlat.md' },
+          { text: 'HTML 编码规范', link: '/coding/html.md' },
+          { text: 'CSS 编码规范', link: '/coding/css.md' },
+          { text: 'JavaScript 编码规范', link: '/coding/javascript.md' },
+          { text: 'Typescript 编码规范', link: '/coding/typescript.md' },
+          { text: 'Node 编码规范', link: '/coding/node.md' },
         ],
       },
       {
-        text: '兴趣爱好',
+        text: '工程规范',
         items: [
-          { text: '羽毛球', link: '/hobbies/badminton.md' },
-          { text: '追剧', link: '/hobbies/bingeWatch.md' },
-          { text: '唱歌', link: '/hobbies/sing.md' },
+          { text: 'Git 规范', link: '/engineering/git.md' },
+          { text: '文档规范', link: '/engineering/doc.md' },
+          { text: 'CHANGELOG 规范', link: '/engineering/changelog.md' },
         ],
       },
-           
-     
+      {
+        text: 'NPM包',
+        items: [
+          { text: 'eslint-config-encode', link: '/npm/eslint.md' },
+          { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
+          { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
+          { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
+          { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
+        ],
+      },
+      {
+        text: '脚手架',
+        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+      },
     ],
     sidebar: [
       {
         title: '编码规范',
         children: [
           {
-            title: '学习',
-            path: '/daily/study.md',
+            title: 'HTML 编码规范',
+            path: '/coding/html.md',
           },
           {
-            title: '躺平',
-            path: '/daily/lieFlat.md',
+            title: 'CSS 编码规范',
+            path: '/coding/css.md',
           },
-         
+          {
+            title: 'JavaScript 编码规范',
+            path: '/coding/javascript.md',
+          },
+          {
+            title: 'Typescript 编码规范',
+            path: '/coding/typescript.md',
+          },
+          {
+            title: 'Node 编码规范',
+            path: '/coding/node.md',
+          },
         ],
       },
       {
-        title: '兴趣爱好',
+        title: '工程规范',
         children: [
           {
-            title: '羽毛球',
-            path: '/hobbies/badminton.md',
+            title: 'Git 规范',
+            path: '/engineering/git.md',
           },
           {
-            title: '追剧',
-            path: '/hobbies/bingeWatch.md',
+            title: '文档规范',
+            path: '/engineering/doc.md',
           },
           {
-            title: '唱歌',
-            path: '/hobbies/sing.md',
+            title: 'CHANGELOG 规范',
+            path: '/engineering/changelog.md',
           },
         ],
       },
+      {
+        title: 'NPM包',
+        children: [
+          { title: 'eslint-config-encode', path: '/npm/eslint.md' },
+          { title: 'stylelint-config-encode', path: '/npm/stylelint.md' },
+          { title: 'commitlint-config-encode', path: '/npm/commitlint.md' },
+          { title: 'markdownlint-config-encode', path: '/npm/markdownlint.md' },
+          { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
+        ],
+      },
+      {
+        title: '脚手架',
+        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
+      },
     ],
-    logo: '/img/logo.jpg',    //本地:.vuepress/public/img 打包后 根目录下
+    logo: '/img/logo.png',    //本地:.vuepress/public/img 打包后 根目录下
     repo: 'encode-studio-fe/fe-spec',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
@@ -82,7 +122,7 @@ export default defineConfig4CustomTheme({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/img/logo.jpg' }],
+    ['link', { rel: 'icon', href: '/img/logo.png' }],
     [
       'meta',
       {
