@@ -13,7 +13,8 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
-    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+    "print-config": "eslint --print-config ./index.js > ./print-config.json",
+    "print-config-react": "eslint --print-config ./react.js > ./print-config-react.json"
   },
   "author": "chenghuai",
   "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",

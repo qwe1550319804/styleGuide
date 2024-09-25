@@ -32,8 +32,7 @@ lint 收敛 CLI
  
 
 
-
-# pajen.json
+## pajen.json
 ```js
 {
   "scripts": {
@@ -56,7 +55,48 @@ lint 收敛 CLI
 ```
 
 
-# lerna
+## lerna
 通过 lerna 创建文件夹
 1. pnpm 需要指定创建的路径(根目录 pnpm-workspace.yaml)
 2. lerna create demo1  自动在 packages 中添加demo1文件
+
+## 核心
+ 不同环境做所有化的定制配置。核心是基础配置项rule,需要node就是依赖包后面拼需要引入的内容node、vue、react，还可以依赖包/typescript/node、vue.选择vue 指向当前的vue文件
+1. 下载npm依赖包，通过问答模式让用户自定义初始化配置，如是否需要使用stylelint、markdownlint等。
+
+
+1. 通过注入script 添加git hooks
+  1. pre-commit scan
+  2. commit-msg commitlint
+2. 通过四个lint 工具
+  1. 获取当前项目的lint config 先读取当前项目已有的配置项，没有使用默认配置，同时消费ignore
+  2. 使用lint 工具，根据options.fix 进行自动修复
+  3. 按照scanResult 标准化输出内容
+3. 完善cli 基本能力
+  1. init 安装基础包
+  2. scan scanAction
+  3. fix scanAction fix 配置是否自动修复
+  4. commit-fill-csan  commit-msg-scan
+
+注入方式：
+- main 整个入口
+- bin encode-fe-lint 实现完整脚手架指令 cli
+- 
+
+
+node: program 提供完整输入输出 用户基于选项选择对应的配置
+通过init初始化 initAction  消费配置项 进行对应的action配置
+## 
+
+
+
+
+Scan fix 区别的就是中传了fix 是否需要修复
+Scan流程：获取eslint、Stylelint、markdownlint中的所有报错，Stylelint：定义一个异步函数，检查stylelint等样式文件等代码风格。
+fix流程：先prettier 后获取未处理的错误信息
+
+面试
+1. 个人编码能力 cli node linter ts  vuepress
+2. 面试深度体现 
+3. 前端整体理解  业务研发 -> 前端架构 
+ 

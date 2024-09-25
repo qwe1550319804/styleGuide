@@ -23,6 +23,19 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
 
   // eslint
   if (config.enableESLint !== false) {
+    /**
+     * options：types.ts文件中的 ScanOptions
+     *          cwd: string;lint 运行的工程目录
+     *          include: string; 进行规范扫描的目录
+     *          files?: string[]; 进行规范扫描的列表
+     *          quiet?: boolean;  仅报告错误信息
+     *          ignore?: boolean;  忽略 eslint 的 ignore 配置文件和 ignore 规则
+     *          fix?: boolean; 自动修复
+     *          outputReport?: boolean; 生成报告文件
+     *           config?: Config;  scan 时指定 encode-fe-lint config，优先级高于 encode-fe-lint.config.js
+     */ 
+
+ 
     try {
       const eslintResults = await doESLint({ ...options, pkg, config });
       results = results.concat(eslintResults);

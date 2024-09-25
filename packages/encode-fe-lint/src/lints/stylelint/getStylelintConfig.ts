@@ -9,12 +9,12 @@ import { STYLELINT_IGNORE_PATTERN } from '../../utils/constants';
  * 获取 Stylelint 配置
  */
 export function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config): LinterOptions {
-  const { cwd, fix } = opts;
+  const { cwd, fix  } = opts;
   if (config.enableStylelint === false) return {} as any;
 
   const lintConfig: any = {
     fix: Boolean(fix),
-    allowEmptyInput: true,
+    allowEmptyInput: true,  
   };
 
   if (config.stylelintOptions) {
