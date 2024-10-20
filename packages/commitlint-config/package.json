@@ -1,0 +1,24 @@
+{
+  "name": "commitlint-config-norm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Git规范",
+  "keywords": [
+    "norm",
+    "commit",
+    "lint"
+  ],
+  "author": "冬瓜",
+  "homepage": "https://github.com/qwe1550319804/styleGuide#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwe1550319804/styleGuide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qwe1550319804/styleGuide/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  }
+}

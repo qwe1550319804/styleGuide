@@ -1,0 +1,24 @@
+{
+  "name": "markdownlint-config-norm",
+  "version": "1.0.0",
+  "main": "index.json",
+  "description": "文档规范",
+  "keywords": [
+    "norm",
+    "markdown",
+    "lint"
+  ],
+  "author": "冬瓜",
+  "homepage": "https://github.com/norm-studio-fe/fe-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norm-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/norm-studio-fe/fe-spec/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  }
+}
