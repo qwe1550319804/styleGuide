@@ -37,7 +37,7 @@ export default defineConfig4CustomTheme({
           { text: 'stylelint-config-norm', link: '/npm/stylelint.md' },
           { text: 'commitlint-config-norm', link: '/npm/commitlint.md' },
           { text: 'markdownlint-config-norm', link: '/npm/markdownlint.md' },
-          { text: 'eslint-plugin-norme', link: '/npm/eslint-plugin.md' },
+          { text: 'eslint-plugin-norm', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
@@ -95,7 +95,7 @@ export default defineConfig4CustomTheme({
           { title: 'stylelint-config-norm', path: '/npm/stylelint.md' },
           { title: 'commitlint-config-norm', path: '/npm/commitlint.md' },
           { title: 'markdownlint-config-norm', path: '/npm/markdownlint.md' },
-          { title: 'eslint-plugin-norme', path: '/npm/eslint-plugin.md' },
+          { title: 'eslint-plugin-norm', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
@@ -103,14 +103,14 @@ export default defineConfig4CustomTheme({
         children: [{ title: 'norm-fe-lint', path: '/cli/norm-fe-lint.md' }],
       },
     ],
-    logo: '/img/logo.png',    //本地:.vuepress/public/img 打包后 根目录下
-    // repo: 'qwe1550319804/styleGuide',
+    logo: '/img/logo.png',
+    repo: 'qwe15550319804/styleGuide',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
     // footer: {
     //   createYear: 2023,
     //   copyrightInfo:
-    //     'encode studio | <a href="https://github.com/qwe1550319804/styleGuide" target="_blank">github</a>',
+    //     'norm studio | <a href="https://github.com/qwe1550319804/styleGuide" target="_blank">github</a>',
     // },
 
     extendFrontmatter: {
