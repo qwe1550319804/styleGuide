@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-norm",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
@@ -20,6 +20,5 @@
   },
   "peerDependencies": {
     "markdownlint": "^0.28.1"
-  },
-  "gitHead": "995a2f8bf1bb2e2d0539f45603d9b646036a953c"
+  }
 }

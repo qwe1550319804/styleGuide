@@ -1,6 +1,6 @@
 {
   "name": "norm-fe-lint",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -94,6 +94,5 @@
   },
   "bugs": {
     "url": "https://github.com/qwe1550319804/styleGuide/issues"
-  },
-  "gitHead": "995a2f8bf1bb2e2d0539f45603d9b646036a953c"
+  }
 }
