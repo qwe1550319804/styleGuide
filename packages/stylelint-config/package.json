@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-norm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS规范",
   "main": "index.js",
   "keywords": [
@@ -29,5 +29,6 @@
   },
   "bugs": {
     "url": "https://github.com/norm-studio-fe/fe-spec/issues"
-  }
+  },
+  "gitHead": "995a2f8bf1bb2e2d0539f45603d9b646036a953c"
 }
