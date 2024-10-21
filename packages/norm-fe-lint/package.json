@@ -1,6 +1,6 @@
 {
   "name": "norm-fe-lint",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
