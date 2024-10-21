@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-norm",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
