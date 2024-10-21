@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-norm",
-  ""version": "1.0.0",
+  "version": "1.0.0",
   "description": "自定义eslint插件",
   "scripts": {
     "test": "jest",
