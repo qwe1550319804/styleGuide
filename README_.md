@@ -80,3 +80,5 @@ node: program 提供完整输入输出 用户基于选项选择对应的配置
 Scan fix 区别的就是中传了fix 是否需要修复
 Scan流程：获取eslint、Stylelint、markdownlint中的所有报错，Stylelint：定义一个异步函数，检查stylelint等样式文件等代码风格。
 fix流程：先prettier 后获取未处理的错误信息
+
+test
